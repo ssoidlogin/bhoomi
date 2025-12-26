@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bhoomi Karnataka | RTC Pahani & Land Records Online</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta name="description" content="Bhoomi is the official digital land records portal for Karnataka. View RTC (Pahani), Mutation status, and Revenue Maps.">
+  <meta name="keywords" content="Bhoomi Karnataka, RTC online, Pahani, land records Karnataka, Mutation status, Revenue Maps, i-RTC, Dishaank App, XML Verification">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    /* Smooth Scrolling for anchor links */
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background-color: #f5f7fa;
+      color: #222;
+    }
+
+    /* Header & Footer - Blue Theme */
+    .bg-custom {
+      background-color: #003366;
+    }
+    .navbar-brand {
+      padding-left: 10px;
+    }
+    .dropdown-menu {
+      margin-left: 10px;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+
+    header a,
+    footer,
+    footer a {
+      color: #ffffff !important;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    /* Dropdown menu fix */
+    .dropdown-menu {
+      background-color: #003366;
+      border: none;
+    }
+
+    .dropdown-item {
+      color: #ffffff;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .dropdown-item:hover,
+    .dropdown-item:focus {
+      background-color: #f39c12;
+      color: #ffffff;
+    }
+
+    /* Mobile-specific spacing */
+    @media (max-width: 991.98px) {
+        .navbar-brand { padding-left: 20px !important; }
+        .navbar-toggler { margin-right: 15px !important; }
+        .navbar-collapse { padding: 0 25px 15px; }
+        .dropdown-menu { margin: 0 10px !important; border-radius: 8px; }
+    }
+
+    /* Service Buttons */
+    .service-btn {
+      width: 100%;
+      background-color: #003366;
+      color: #ffffff;
+      font-weight: bold;
+      border: none;
+      padding: 12px;
+      transition: 0.3s;
+    }
+
+    .service-btn:hover {
+      background-color: #f39c12;
+      color: #ffffff;
+      transform: translateY(-2px);
+    }
+    
+   h1, h2, h3 {
+    font-weight: bold;
+    text-align: center;
+    color: #003366;
+    margin-top: 30px;
+   }
+
+    footer { font-size: 14px; }
+    
+    /* Blog Images */
+    .blog-image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 20px 0;
+    }
+
+    .blog-image img {
+        width: 100%;
+        max-width: 800px;
+        height: auto;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+        
+    /* Data Tables */
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 20px 0;
+        font-size: 16px;
+        text-align: left;
+    }
+
+    th, td { border: 1px solid #ddd; padding: 12px; }
+    th { background-color: #f4f4f4; color: #003366; }
+    tr:nth-child(even) { background-color: #f9f9f9; }
+    tr:hover { background-color: #f1f1f1; }
+  </style>
+</head>
+
+<body>
+
+<header class="bg-custom">
+  <nav class="navbar navbar-expand-lg navbar-dark container-fluid">
+    <a class="navbar-brand d-flex align-items-center fw-bold text-white" href="/">
+      Bhoomi
+    </a>
+    
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+      data-bs-target="#navbarNav" aria-controls="navbarNav"
+      aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link fw-bold text-white" href="/">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link fw-bold text-white" href="/about-us.html">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link fw-bold text-white" href="/privacy-policy.html">Privacy Policy</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+<main id="main-content">
+<div class="container-fluid my-4">
+
+  <h1>Bhoomi</h1>
+  <p>
+    Bhoomi is the official digital land records management system launched by the Government of Karnataka. It was created to digitize paper records, making them transparent, tamper-proof, and easily accessible to citizens.
+  </p>
+  <p>
+    The most important document you can access here is the RTC (Record of Rights, Tenancy and Crops), locally known as Pahani. Whether you are a farmer applying for a loan or a landowner verifying property details, the Bhoomi portal eliminates the need to visit government offices, allowing you to access records from your home.
+  </p>
+
+  <h2 id="dashboard" style="padding-top: 60px; margin-top: -30px;">Online Services Dashboard</h2>
+  <div class="row g-3 mb-4">
+    <div class="col-md-4 col-6"><a class="btn service-btn" href="https://landrecords.karnataka.gov.in/Service2/">View RTC & MR</a></div>
+    <div class="col-md-4 col-6"><a class="btn service-btn" href="https://www.landrecords.karnataka.gov.in/citizenportal/">Citizen Registration</a></div>
+    <div class="col-md-4 col-6"><a class="btn service-btn" href="https://landrecords.karnataka.gov.in/service3/">Revenue Maps</a></div>
+    <div class="col-md-4 col-6"><a class="btn service-btn" href="https://www.landrecords.karnataka.gov.in/citizenportal/">i-RTC (Signed)</a></div>
+    <div class="col-md-4 col-6"><a class="btn service-btn" href="https://landrecords.karnataka.gov.in/service5/">XML Verification</a></div>
+    <div class="col-md-4 col-6"><a class="btn service-btn" href="https://rtc.karnataka.gov.in/Service78/">i-RTC Wallet</a></div>
+    <div class="col-md-4 col-6"><a class="btn service-btn" href="https://landrecords.karnataka.gov.in/Service11/MR_MutationExtract.aspx">Mutation Extract</a></div>
+    <div class="col-md-4 col-6"><a class="btn service-btn" href="https://landrecords.karnataka.gov.in/service2/forM16A.aspx">RTC Sketch</a></div>
+    <div class="col-md-4 col-6"><a class="btn service-btn" href="https://landrecords.karnataka.gov.in/Service12/MutationStatus.aspx">Mutation Status</a></div>
+    <div class="col-md-4 col-6"><a class="btn service-btn" href="https://landrecords.karnataka.gov.in/citizenportal/">Apply Land Conversion</a></div>
+    <div class="col-md-4 col-6"><a class="btn service-btn" href="https://bhoomojini.karnataka.gov.in/index.html">Mojini v3</a></div>
+    <div class="col-md-4 col-6"><a class="btn service-btn" href="https://play.google.com/store/apps/details?id=com.ksrsac.sslr&hl=en_IN">Dishaank App</a></div>
+ </div>
+
+  <h3>Key Details You Should Know</h3>
+  <table>
+      <thead>
+        <tr>
+          <th>Feature</th>
+          <th>Details</th>
+        </tr>
+      </thead>
+      <tbody>
+        <th>Portal Name</th>
+        <td><strong>Bhoomi RTC</strong></td>
+      </tr>
+      <tr>
+        <th>Launched By</th>
+        <td>Government of Karnataka</td>
+      </tr>
+      <tr>
+        <th>Managed By</th>
+        <td>Revenue Department, Karnataka</td>
+      </tr>
+      <tr>
+        <th>Launch Year</th>
+        <td>2000 (First digitized land records system in India)</td>
+      </tr>
+      <tr>
+        <th>Beneficiaries</th>
+        <td>Citizens & Farmers of Karnataka</td>
+      </tr>
+      <tr>
+        <th>Official Website</th>
+        <td><a href="https://landrecords.karnataka.gov.in" target="_blank">landrecords.karnataka.gov.in</a></td>
+      </tr>
+      <tr>
+        <th>Mobile App</th>
+        <td>Dishaank (for Survey Numbers)</td>
+      </tr>
+      <tr>
+        <th>Key Services</th>
+        <td>View RTC (Pahani), Mutation Status, Revenue Maps, Tippan</td>
+      </tr>
+      <tr>
+        <th>Mode of Access</th>
+        <td>Online & Offline (via Nadakacheri Centers)</td>
+      </tr>
+      <tr>
+        <th>Helpdesk/Contact</th>
+        <td><a href="mailto:bhoomi@karnataka.gov.in" style="color: #003366; text-decoration: underline;">bhoomi@karnataka.gov.in</a></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h3>Why is the RTC (Pahani) Document Important?</h3>
+  <p>The RTC contains vital details about a specific piece of land:</p>
+  <ul>
+    <li><strong>Owner Details:</strong> Who currently owns the land.</li>
+    <li><strong>Tenancy:</strong> Who is cultivating the land.</li>
+    <li><strong>Crops:</strong> What crops are grown (essential for crop insurance).</li>
+    <li><strong>Land Type:</strong> Agricultural, commercial, or non-agricultural.</li>
+    <li><strong>Liabilities:</strong> Existing bank loans or litigations on the land.</li>
+  </ul>
+
+  
+
+  <h2>How to Check Bhoomi RTC (Pahani) Online</h2>
+  <p>Follow this step-by-step guide to view your land records on the Karnataka Bhoomi portal.</p>
+  <p><strong>Step 1: Visit the Portal</strong><br>Go to the official Bhoomi Land Records website (landrecords.karnataka.gov.in).</p>
+  <p><strong>Step 2: Select 'View RTC and MR'</strong><br>On the homepage, look for the "Services" section and click on "View RTC and MR".</p>
+  <p><strong>Step 3: Enter Land Details</strong><br>You will be asked to fill in the following details based on where your land is located: District, Taluk, Hobli, Village.</p>
+  <p><strong>Step 4: Survey Number</strong><br>Enter the Survey Number of your land. Once entered, the system will ask for the Surnoc and Hissa Number (sub-division number).</p>
+  <p><strong>Step 5: Fetch Details</strong><br>Click on "Fetch Details". The complete land record (RTC) will be displayed on your screen. You can view owner names, land extent, and soil type here.</p>
+  <p><em>Note: To download a signed legal copy for court or loan purposes, you must use the "i-RTC" wallet service and pay a nominal fee (approx. ₹15).</em></p>
+
+  <h3>What is a Digitally Signed i-RTC?</h3>
+  <p>Unlike the informational copy, a Digitally Signed i-RTC is a legal document valid for court proceedings, bank loan applications, and property registration. It carries a unique QR code and digital signature that verifies its authenticity.</p>
+  
+  <h4>Steps to Download Signed i-RTC:</h4>
+  <ol>
+    <li><strong>Login:</strong> Visit the Bhoomi portal and select "i-RTC Wallet Services". You must log in with your User ID (or create a new account).</li>
+    <li><strong>Add Money:</strong> The signed copy is a paid service (approx. ₹15 per copy). You must top up your wallet using UPI, Net Banking, or Credit Card.</li>
+    <li><strong>Search Land:</strong> Enter your District, Taluk, Hobli, Village, and Survey Number.</li>
+    <li><strong>Pay & Print:</strong> Click "Pay and Print." The PDF will download immediately.</li>
+  </ol>
+  <p>Save this PDF securely; the download link may expire.</p>
+
+  <h3>How to Check Mutation Status (MR) Online</h3>
+  <p>If you have recently bought or sold land, you need to check if the ownership transfer (Mutation) has been updated in the government records.</p>
+  <ul>
+    <li>Navigate to the "View RTC and MR" section.</li>
+    <li>Select the "Mutation Status" tab.</li>
+    <li>Enter the District, Taluk, Hobli, Village, and Survey Number.</li>
+    <li>Click "Fetch Details".</li>
+  </ul>
+  <p>The system will show the current status of your mutation application (e.g., Pending, Accepted, or Rejected).</p>
+
+  
+
+  <h3>How to View Village Revenue Maps Online?</h3>
+  <p>A Revenue Map shows the geographical boundaries of a village and the division of survey numbers within it. It helps landowners identify the shape and location of their plot within the village layout.</p>
+  <p><strong>How to Download:</strong></p>
+  <ol>
+    <li>Go to the "Revenue Maps" section on the Bhoomi home page.</li>
+    <li>Select your District, Taluk, and Hobli.</li>
+    <li>Choose your Village from the list.</li>
+    <li>Click the PDF icon to download the full village map.</li>
+  </ol>
+  <p>These maps are large files; ensure you have a stable internet connection.</p>
+
+  <h3>What is the Dishaank App?</h3>
+  <p>Developed by the Karnataka Remote Sensing Applications Centre (KSRSAC), the Dishaank App allows you to see your survey number based on your current GPS location. This is incredibly useful for verifying if a plot of land you are buying actually falls under the survey number claimed by the seller.</p>
+  <p><strong>How to Use:</strong></p>
+  <ul>
+    <li>Download Dishaank from the Google Play Store.</li>
+    <li>Enable GPS/Location services on your phone.</li>
+    <li>Stand on the land in question and open the app.</li>
+    <li>The map will overlay the survey boundaries on your location, showing you the exact Survey Number and Gomala (government land) details.</li>
+  </ul>
+
+  <h3>How to Verify XML RTC</h3>
+  <p><strong>Why Verify?</strong> Fraudsters can alter printed documents. The "Verify XML" feature ensures that the document you hold matches the data on the government server exactly.</p>
+  <p><strong>Steps:</strong></p>
+  <ol>
+    <li>Go to the "RTC XML Verification" tab on the portal.</li>
+    <li>Enter the Reference Number found on your downloaded i-RTC.</li>
+    <li>The system will confirm if the document is genuine and display the valid data for comparison.</li>
+  </ol>
+
+  <h3>Bhoomi Service Fees & Charges (2025)</h3>
+  <table>
+      <thead>
+        <tr>
+          <th>Service</th>
+          <th>Document Type</th>
+          <th>Estimate (₹)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>View RTC</td>
+          <td>Informational Copy</td>
+          <td>Free</td>
+        </tr>
+        <tr>
+          <td>i-RTC</td>
+          <td>Digitally Signed</td>
+          <td>₹15.00</td>
+        </tr>
+        <tr>
+          <td>Mutation Status</td>
+          <td>View Status</td>
+          <td>Free</td>
+        </tr>
+        <tr>
+          <td>Mutation Extract</td>
+          <td>Certified Copy</td>
+          <td>₹15.00</td>
+        </tr>
+        <tr>
+          <td>Tippan</td>
+          <td>Survey Sketch</td>
+          <td>₹15.00</td>
+        </tr>
+      </tbody>
+  </table>
+
+  <h3>Frequently Asked Questions (FAQs)</h3>
+  <div class="faq-item">
+    <p><strong>Q: Can I use the online RTC copy for legal purposes?</strong><br>
+    A: The free viewable version is for information only. For legal matters, bank loans, or registration, you must download the Digitally Signed i-RTC, which is valid without a manual signature.</p>
+    
+    <p><strong>Q: What if my land details are missing on Bhoomi?</strong><br>
+    A: If your data is not digitized or contains errors, you must visit the nearest Bhoomi Monitoring Cell or your Taluk office to file an application for data entry or correction.</p>
+    
+    <p><strong>Q: How can I view the Revenue Map of my village?</strong><br>
+    A: Visit the "Revenue Maps" section on the Bhoomi portal, select your district/taluk/village, and you can download the PDF map showing survey number boundaries.</p>
+  </div>
+
+</div>
+</main>
+
+<footer class="bg-custom text-center py-3">
+  <div class="container">
+      <p><strong>Disclaimer:</strong> This website aims to provide information about Bhoomi. We are not affiliated with the Government of Karnataka. This website is created for public convenience.</p>
+    <div>
+      © 2025 Bhoomi Portal
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
